@@ -16,7 +16,7 @@ class Mycontroller {
         return ResponseEntity("welcome!", HttpStatus.OK)
     }
 
-    @PostMapping("rest/{name}")
+    @PostMapping("rest/{word}")
     fun post(
         @PathVariable word: String,
         @RequestBody language: String

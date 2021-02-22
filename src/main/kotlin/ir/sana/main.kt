@@ -7,7 +7,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder
 class myapp
 fun main()
 {
-    println("hello sepehr!")
+    //println("hello sepehr!")
     SpringApplicationBuilder(myapp::class.java).run()
 
 }
