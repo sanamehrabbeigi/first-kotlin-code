@@ -22,26 +22,23 @@ class Mycontroller {
         @RequestBody language: String
     ): ResponseEntity<String> {
         when(language){
-            "chinese" -> { for (input in words) {
-                                when(word) {
-                                    "hello" -> translatedWord = "你好"
-                                    "cat" -> translatedWord = "猫"
-                                    "dog" -> translatedWord = "狗"
-                                    "sun" -> translatedWord = "太阳"
-                                    "blue" -> translatedWord = "蓝色"
-                                    else -> translatedWord = "Not supported!"
-                                }
-                        }
+            "chinese" -> { when(word) {
+                            "hello" -> translatedWord = "你好"
+                            "cat" -> translatedWord = "猫"
+                            "dog" -> translatedWord = "狗"
+                            "sun" -> translatedWord = "太阳"
+                            "blue" -> translatedWord = "蓝色"
+                            else -> translatedWord = "Not supported!"
+                            }
+
             }
-            "italian" -> { for (input in words) {
-                                when(word) {
-                                    "hello" -> translatedWord = "Ciao"
-                                    "cat" -> translatedWord = "gatta-gatto"
-                                    "dog" -> translatedWord = "cagna-cane"
-                                    "sun" -> translatedWord = "sole"
-                                    "blue" -> translatedWord = "blu"
-                                    else -> translatedWord = "Not supported!"
-                                }
+            "italian" -> { when(word) {
+                            "hello" -> translatedWord = "Ciao"
+                            "cat" -> translatedWord = "gatta-gatto"
+                            "dog" -> translatedWord = "cagna-cane"
+                            "sun" -> translatedWord = "sole"
+                            "blue" -> translatedWord = "blu"
+                            else -> translatedWord = "Not supported!"
                             }
             }
             else -> translatedWord = "Not supported!"
