@@ -1,7 +1,7 @@
 package ir.sana.config.mongodb
 
 import nonapi.io.github.classgraph.json.Id
-import org.bson.types.ObjectId
+import org.bison.types.ObjectId
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.LocalDateTime
