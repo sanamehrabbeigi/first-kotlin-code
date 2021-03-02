@@ -62,6 +62,5 @@ class Mycontroller {
     fun post(
         @PathVariable word: String,
         @RequestBody language: String
-    ): ResponseEntity<String> {
-    }
+    ): ResponseEntity<String> {}
 }
